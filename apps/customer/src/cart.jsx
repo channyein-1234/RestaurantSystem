@@ -18,10 +18,11 @@ export default function CartPage() {
     const params = new URLSearchParams(window.location.search);
     const table = params.get("table");
     const qrToken = params.get("token");
-
-    setTableId(table ? parseInt(table) : null);
-    setToken(qrToken || null);
+  
+    setTableId(table?.trim() || null);
+    setToken(qrToken?.trim() || null);
   }, []);
+  
 
   // Validate token
   useEffect(() => {

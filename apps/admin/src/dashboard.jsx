@@ -81,40 +81,40 @@ const handleSubmit = async (e) => {
     <div className="min-h-screen bg-sky-100">
            {/* Navbar */}
            <nav className="w-full bg-sky-300 p-4 shadow">
-        <div className="flex flex-row flex-wrap items-center justify-between gap-2 sm:gap-4">
+              <div className="flex flex-row flex-wrap items-center justify-between gap-2 sm:gap-4">
 
-          {/* Logo */}
-          <div className="flex items-center gap-2 sm:gap-4 flex-shrink-0">
-            <Link to="/logo">
-            <img
-              src={navbarLogo || "/logo.svg"}
-              alt="Logo"
-              className="h-10 m-2 w-10 object-contain"
-            />
-            </Link>
+                {/* Logo */}
+                <div className="flex items-center gap-2 sm:gap-4 flex-shrink-0">
+                  <Link to="/logo">
+                  <img
+                    src={navbarLogo || "/logo.svg"}
+                    alt="Logo"
+                    className="h-10 m-2 w-10 object-contain"
+                  />
+                  </Link>
 
-            {/* Links */}
-            <div className="flex flex-row flex-wrap items-center gap-3 sm:gap-4 md:gap-5 lg:gap-6 ">
-              <Link
-                to="/menu"
-                className="font-bold ml-1 text-sm sm:text-sm sm:ml-2 md:text-lg lg:text-xl xl:text-xl 
-                hover:text-gray-700 px-2 sm:px-3 md:px-5 lg:px-7"
-              >
-                Menu
-              </Link>
+                  {/* Links */}
+                  <div className="flex flex-row flex-wrap items-center gap-3 sm:gap-4 md:gap-5 lg:gap-6 ">
+                    <Link
+                      to="/menu"
+                      className="font-bold ml-1 text-sm sm:text-sm sm:ml-2 md:text-lg lg:text-xl xl:text-xl 
+                      hover:text-gray-700 px-2 sm:px-3 md:px-5 lg:px-7"
+                    >
+                      Menu
+                    </Link>
 
-              <Link
-                to="/dashboard"
-                className="font-bold text-sm sm:text-sm md:text-lg lg:text-xl xl:text-xl 
-                hover:text-gray-700"
-              >
-                Dashboard
-              </Link>
-            </div>
-          </div>
+                    <Link
+                      to="/dashboard"
+                      className="font-bold text-sm sm:text-sm md:text-lg lg:text-xl xl:text-xl 
+                      hover:text-gray-700"
+                    >
+                      Dashboard
+                    </Link>
+                  </div>
+                </div>
 
-        </div>
-      </nav>
+              </div>
+            </nav>
 
 
       {/* Form */}

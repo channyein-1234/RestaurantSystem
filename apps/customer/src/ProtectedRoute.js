@@ -14,16 +14,17 @@ export default function ProtectedRoute({ children }) {
   useEffect(() => {
     const validateToken = async () => {
       // If either table or token is missing, immediately invalidate
-      if (!table || !token || isNaN(parseInt(table))) {
+      if (!table || !token) {
         setIsValid(false);
         return;
       }
+      
 
       // Query Supabase table_tokens to verify table+token
       const { data, error } = await supabase
         .from("table_tokens")
         .select("*")
-        .eq("table_num", parseInt(table))
+        .eq("table_num")
         .eq("token", token)
         .single();
 
