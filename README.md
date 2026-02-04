@@ -78,10 +78,7 @@ available to the kitchen and admin dashboards for efficient processing.
 
 ---
 
-## Screenshots / Demo
-(Add screenshots or demo link here)
 
----
 
 ## Future Improvements
 - Payment gateway integration
